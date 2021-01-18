@@ -1,0 +1,24 @@
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+//spread operator // rest is to combine to array and sread to split array
+var displayColors1 = function (message) {
+    var colors = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        colors[_i - 1] = arguments[_i];
+    }
+    console.log(message);
+    console.log(colors);
+    console.log(arguments.length);
+    for (var i in colors) {
+        console.log(colors[i]);
+    }
+};
+var message1 = 'list of Colors';
+var colorArray = ['Orange', 'Yellow', 'Indigo'];
+displayColors1.apply(void 0, __spreadArrays([message1], colorArray)); // spread operator is specified in function call 
+//# sourceMappingURL=tutorial14.js.map
