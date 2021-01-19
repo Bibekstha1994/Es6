@@ -68,6 +68,7 @@
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "noImplicitAny":false,
     "sourceMap":true,
+    "experimentalDecorators": true,
     "outDir":"scripts/" /* to manage js files */
   }
 }
